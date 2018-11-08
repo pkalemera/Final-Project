@@ -1,0 +1,32 @@
+header {
+  min-height: 50vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(https://media.giphy.com/media/QOw8C33GxcVojIRHAz/giphy.gif);
+  text-align: center;
+  
+}
+section {
+  padding: 3rem 12rem 3rem 3rem;
+
+}
+
+.menu {
+  background-color: rgba(225,127,80,0.6);
+  position:fixed;
+  padding: 1rem 4rem;
+  width: 10rem;
+  top:5rem;
+  right:-2rem;
+  transform: rotate(90deg);
+
+
+  /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).
+  */
+}
+h4 {
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  background-color: rgba(225,127,80,0.3);
+}
