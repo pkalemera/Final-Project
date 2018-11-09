@@ -22,4 +22,18 @@ header {
 }
 
   /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).
+  .sec-main {
+  position: relative;
+  height: 560px;
+  background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
+  background-size: cover;
+}
+
+  .main-heading {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+
   */
