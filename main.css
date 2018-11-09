@@ -2,14 +2,14 @@ section {
 padding: 1%;
  border: solid grey;
 
-/*header {
+header {
   min-height: 50vh;
   background-size: cover;
   background-position: 50% 50%;
   background-color: grey;
   text-align: center;
+}
 
-} */
 
 .menu {
   background-color: rgba(200,200,200,0.6);
