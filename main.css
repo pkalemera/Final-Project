@@ -1,7 +1,6 @@
-* {
-  padding:7%;
-  border: 2px solid black;
-}
+section {
+padding: 1%;
+ border: solid grey;
 
 /*header {
   min-height: 50vh;
