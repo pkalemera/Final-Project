@@ -1,20 +1,63 @@
-
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER
+---------------------------
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+----------------------------
+/*------ CSS RESET-------*/
 
 * {
- padding: 1%;
- border: 1px solid grey;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+/*------ GENERAL HELPER CLASSES-------*/
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+
+/*-----UNIVERSAL STYLES------------*/
+
+body {
+ font-family: "Source Code Pro";
+ /* font-weight: 200; */
+
+}
+
+.no-padding { padding: 0; }
+
+.padded-1 { padding: 1%; }
+.padded-3 { padding: 3%; }
+.padded-5 { padding: 5%; }
+
+.padded-top-1 { padding-top: 1%;}
+
+.mob-show { display: none;}
+
+.bg-img {
+  /* background-color: grey; */
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-  min-height: 50vh;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: grey;
-  text-align: center;}
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
 
-video{
-  height: 100%;
-  width: 100%;
+header video {
+  position: absolute;
+  min-width: 100%;
+  z-index: -100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
