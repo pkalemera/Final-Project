@@ -10,7 +10,11 @@ header {
   background-size: cover;
   background-position: 50% 50%;
   background-color: grey;
-  text-align: center;
+  text-align: center;}
+
+video{
+  height: 100%;
+  width: 100%;
 }
 
 
