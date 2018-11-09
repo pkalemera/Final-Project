@@ -1,6 +1,7 @@
-section {
-padding: 1%;
- border: solid grey;
+* {
+ padding: 1%;
+ border: 1px solid grey;
+}
 
 header {
   min-height: 50vh;
