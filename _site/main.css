@@ -1,0 +1,95 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER
+  - F
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORM
+  - SPECIFIC PAGES
+    - review.html
+---------------------------
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+----------------------------
+*/
+
+/*- - - - - CSS RESET - - - - - - - - -*/
+
+* {
+ box-sizing: border-box;
+ border: 1px solid grey;
+ padding: 0;
+ margin: 0;
+}
+
+
+/* ------ UNIVERSAL STYLES - - - - - -*/
+body {
+font-family: "Source Code Pro";
+}
+/* ------ GENERAL HELPER CLASSES - - - - - -*/
+
+.left {text-align: left;}
+.centered {text-align: center;}
+
+.no-padding {padding: 0;}
+.padded-1 {padding: 1%;}
+.padded-3 {padding: 3%}
+.padded-5 {padding: 5%}
+.padded-top-1 {padding-top: 1%;}
+
+.mob-show {display: none;}
+
+.bg-img {
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+header {
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 10px;
+}
+header video{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  min-width: 100%;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+
+.menu {
+  background-color: rgba(200,200,200,0.6);
+  position:fixed;
+  padding: 1rem 4rem;
+  width: 10rem;
+  top:5rem;
+  right:-2rem;
+  transform: rotate(90deg);
+  letter-spacing: 10px;
+}
+
+
+  /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).
+  .sec-main {
+  position: relative;
+  height: 560px;
+  background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
+  background-size: cover;
+}
+
+  .main-heading {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+
+  */
