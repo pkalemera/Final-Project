@@ -17,20 +17,52 @@ Website Colours: List colour hex codes here for reference
 
 /*- - - - - CSS RESET - - - - - - - - -*/
 
- * {
  font-family: "Source Code Pro";
+* {
+ box-sizing: border-box;
+ border: 1px solid grey;
+ padding: 0;
+ margin: 0;
 }
+
+
+/* ------ UNIVERSAL STYLES - - - - - -*/
+body {
+font-family: "Source Code Pro";
+}
+/* ------ GENERAL HELPER CLASSES - - - - - -*/
+
+.left {text-align: left;}
+.centered {text-align: center;}
+
+.no-padding {padding: 0;}
+.padded-1 {padding: 1%;}
+.padded-3 {padding: 3%}
+.padded-5 {padding: 5%}
+.padded-top-1 {padding-top: 1%;}
+
+.mob-show {display: none;}
+
+.bg-img {
+  background-size: cover;
+  background-position: center;
+}
+
 
 
 header {
   min-height: 60vh;
-  background-size: cover;
-  background-position: 100%;
-  text-align: center;}
-
-video{
-  height: 100%;
-  width: 100%;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 10px;
+}
+header video{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  min-width: 100%;
+  z-index: -100;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -42,7 +74,9 @@ video{
   top:5rem;
   right:-2rem;
   transform: rotate(90deg);
+  letter-spacing: 10px;
 }
+
 
   /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).
   .sec-main {
