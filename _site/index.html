@@ -5,11 +5,14 @@
   ignore) -->
   <title>Pamela Art Events</title>
 
+  <!-- This is the spot where we add third party stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/hcf7bmo.css">
-  <link href="main.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900">
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
+  <!-- This is the spot where we our own stylesheets -->
+  <link rel="stylesheet" href="main.css" type="text/css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,49 +20,51 @@
 
 <!-- - - - - - - This is where the main body begins- - - - - - - - - -->
 <body>
-<!-- - - - - - - Header- video and text over it- - - - - - - - - - - -->
 
-<!-- - - - - - - - This is for the menu and drop down menu- - - - - - -->
+  <div class="burger-button">
+      <span class="burger-top"></span>
+      <span class="burger-middle"></span>
+      <span class="burger-bottom"></span>
+  </div>
 
-<!-- - - - - - - - - - Insert drop down menu function here?- - - - - - --->
+  <nav class= "burger-menu">
 
-<header class="grid-middle-center">
-
-    <video autoplay muted loop>
-      <source src="vid/IntroVid.mp4" type="video/mp4">
-        UPDATE YOUR BROWSER
-    </video>
-
-  <div>
-    <div class="row row-skin push-1 pull-3">
-      <h1 class="centered row-inside">ART SPACE</h1>
+    <!-- this section will only show when menu is clicked - - -  -->
+    <div class="dropdown">
+      <a href=index.html#current> Current Events </a>
+      <a href=index.html#upcoming> Look Out For</a>
+      <a href=index.html#sneak> Sneak Peeks</a>
+      <a href=index.html#review> Upon Reflection </a>
+      <a href=index.html#location> Find Locations </a>
     </div>
-    <h3 class="centered">
-    This is a subheading
-    </h3>
-  </div>
+  </nav>
 
-</header>
+  
+    <header class="grid-middle-center">
+      <video autoplay muted loop>
+        <source src="vid/IntroVid.mp4" type="video/mp4">
+          UPDATE YOUR BROWSER
+      </video>
 
-<nav>
-  <h1 class="menu"> MENU </h1>
-  <!-- this section will only show when menu is clicked - - -  -->
-  <div>
-    <a href=index.html#current> Current Events </a>
-    <a href=index.html#upcoming> Look Out For</a>
-    <a href=index.html#sneak> Sneak Peeks</a>
-    <a href=index.html#review> Upon Reflection </a>
-    <a href=index.html#location> Find Locations </a>
-  </div>
-</nav>
+      <div>
+        <div class="row row-skin push-1 pull-3">
+          <h1 class="row-inside art">ART SPACE<i class="far fa-window-minimize icon"></i>.</h1>
+        </div>
+        <h3 class="centered">
+        This is a subheading
+        </h3>
+      </div>
+      <!-- <h1 class="menu"> <i class="fas fa-ellipsis-v dots"></i> </h1> -->
+    </header>
+  
 
-<!-- Section for Current events etc - - - - - - - - - - - - - -  - - - -->
 
+  <!-- Section for Current events etc - - - - - - - - - - - - - -  - - - -->
 <section class="grid" id="current">
   <div class="col-12">
-    <h3 class="centered">Current Events</h3>
+    <h3 class="centered open-header">Current Events</h3>
   </div>
-  <div class="col-6_sm-12">
+  <div class="col-6_sm-12 push-right">
   </div>
   <div class="col-6_sm-12">
     <h3>Sample Title</h3>
@@ -68,7 +73,7 @@
 </section>
 
 <!-- - - - - - - - - - Section for Coming soon- - - - - - - - - - - - - -->
-<section class="grid" id= "upcoming">
+<section class="grid" id="upcoming">
   <div class="col-12-middle">
     <h3 class="centered">Look Out For</h3>
   </div>
@@ -76,99 +81,131 @@
     <h3>bla bla bla</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="col-6_sm-12-middle">
+  <div class="col-6_sm-12-middle push-left">
   </div>
 </section>
+
+<!-- Find out more- - - - - - - - - -  - - - - - -  -->
+<section class="parallax first-image">
+  <div class="caption">
+    <span>Find Out More</span>
+  </div>
+</section>
+
 <!-- - - -  - - - -Section for Sneak Peek - - - - - - - - - - - -->
-<section class="grid" id ="sneak">
-  <div class="col-12">
-    <h3 class="centered">Sneak Peeks</h3>
-  </div>
-  <div class="col-3_sm-6">
-    <div class="box1 relative">
-      <div class="overlay">
-        <p> Sample Text </p>
-      </div>
+<section class="parallax-demo">
+  <div class="grid" id ="sneak">
+    <div class="col-12">
+      <h3 class="centered">Sneak Peeks</h3>
     </div>
-  </div>
-   <div class="col-3_sm-6">
-    <div class="box1 relative">
+    <div class="col-3_sm-6">
+      <div class="box1 relative">
         <div class="overlay">
           <p> Sample Text </p>
         </div>
+      </div>
     </div>
-  </div>
-  <div class="col-3_sm-6 ">
-    <div class="box1 relative">
-      <div class="overlay">
-        <p> Sample Text </p>
+    <div class="col-3_sm-6">
+      <div class="box1 relative">
+        <div class="overlay">
+          <p> Sample Text </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3_sm-6 ">
+      <div class="box1 relative">
+        <div class="overlay">
+          <p> Sample Text </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3_sm-6 ">
+      <div class="box1 relative">
+          <div class="overlay">
+            <p> Sample Text </p>
+          </div>
       </div>
     </div>
   </div>
-   <div class="col-3_sm-6 ">
-    <div class="box1 relative">
-       <div class="overlay">
-         <p> Sample Text </p>
-       </div>
+</section>
+
+<!-- - - -  - - - -QUOTE - - - - - - - - - - - -->
+<section class="parallax second-image">
+  <div class="caption">
+    <span class="less-height"> <span> Creativity is contagious. Pass it on.</span></span>
+  </div>
+</section>
+
+<!-- - - -  - - - -Reviews - - - - - - - - - - - -->
+<section class="second-text">
+  <div class="grid" id= "review">
+    <div class="col-12-middle">
+      <h3 class="centered">Upon Reflection...</h3>
+    </div>
+    <div class="col-4">
+      <div class="box1 relative">
+        <a class="overlay" href="review.html#review1">Review Number 1</a>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="box1 relative">
+        <a class="overlay" href="review.html#review2">Review Number 2</a>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="box1 relative">
+        <a class="overlay" href="review.html#review3">Review Number 3</a>
+      </div>
     </div>
   </div>
 </section>
-<!-- - - - - - - - This is a break section maybe with a quote - - - - - - - - - - - -->
-<section class="titlebackground grid-center-middle">
-  <div class="col-12">
-    <h2 class="centered">Creativity is contagious, pass it on. </h2>
-    <h4>Albert Einstein</h4>
+
+<!-- - - -  - - - - @todo aka kinda breaks? - - - - - - - - - - - -->
+<section class="parallax third-image">
+  <div class="caption">
+    <span class="scroll-up">Scroll up</span>
   </div>
 </section>
-<!-- - - - - - - - This section of for reviews - - - - - - - - - - - -->
-<section class="grid" id= "review">
-  <div class="col-12-middle">
-    <h3 class="centered">Upon Reflection...</h3>
-  </div>
-  <div class="col-4">
-    <div class="box1 relative">
-      <a class="overlay" href="review.html#review1">Review Number 1</a>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="box1 relative">
-      <a class="overlay" href="review.html#review2">Review Number 2</a>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="box1 relative">
-      <a class="overlay" href="review.html#review3">Review Number 3</a>
-    </div>
+
+<!-- - - -  - - - - @todo aka kinda breaks? - - - - - - - - - - - -->
+<section class="third-text">
+  <h4>Beauty is in the <span> eye </span> of the beholder</h4>
+</section>
+
+<!-- - - -  - - - - @todo aka kinda breaks? - - - - - - - - - - - -->
+<section class="parallax fourth-image">
+  <div class="caption">
+    <span class="cool">stay in the know...</span>
   </div>
 </section>
+
 <!-- This is for the location - - - - - - -->
 <section class="grid" id="location">
   <div class="col-12">
     map goes here
   </div>
 </section>
-<!-- - - -  - -Footer with contact form - - - - - -->
----
-layout: default
----
 
 
 
-<footer class="grid">
-  <div class="col-6_xs-12">
-    <h1 class="left">Stay in the know</h1>
-  </div>
-  <div class="col-6_xs-12 form">
-    <form action="https://formspree.io/youemail@gmail.com" method="POST">
-      <input type="text" name="name" id="name" placeholder="Your Name" />
-      <input type="email" name="_replyto" id="email" placeholder="Your Email" />
-      <textarea name="message" id="message" placeholder="What would you like to see..."></textarea>
-      <input type="submit" value="Submit" class="button" />
-    </form>
-  </div>
-</footer>
+  <footer class="grid">
+    <div class="col-6_xs-12">
+      <h1 class="left">Stay in the know</h1>
+    </div>
+    <div class="col-6_xs-12 form">
+      <form action="https://formspree.io/youemail@gmail.com" method="POST">
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+        <input type="email" name="_replyto" id="email" placeholder="Your Email" />
+        <textarea name="message" id="message" placeholder="What would you like to see..."></textarea>
+        <input type="submit" value="Submit" class="button" />
+      </form>
+    </div>
+  </footer>
 
+  <script src="jquery.js"></script>
+  <script src="main.js"></script>
 
 </body>
 <!-- - - - - - - - -This is where the body ends- - - - - - - - - - - -  - - - --->
+
 </html>

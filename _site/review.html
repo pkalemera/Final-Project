@@ -5,11 +5,14 @@
   ignore) -->
   <title>Pamela Art Events</title>
 
+  <!-- This is the spot where we add third party stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/hcf7bmo.css">
-  <link href="main.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900">
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
+  <!-- This is the spot where we our own stylesheets -->
+  <link rel="stylesheet" href="main.css" type="text/css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,25 +20,29 @@
 
 <!-- - - - - - - This is where the main body begins- - - - - - - - - -->
 <body>
-<!-- - - - - - - Header- video and text over it- - - - - - - - - - - -->
 
-<!-- - - - - - - - This is for the menu and drop down menu- - - - - - -->
-
-<!-- - - - - - - - - - Insert drop down menu function here?- - - - - - --->
-
-<nav>
-  <h1 class="menu"> MENU </h1>
-  <!-- this section will only show when menu is clicked - - -  -->
-  <div>
-    <a href=index.html#current> Current Events </a>
-    <a href=index.html#upcoming> Look Out For</a>
-    <a href=index.html#sneak> Sneak Peeks</a>
-    <a href=index.html#review> Upon Reflection </a>
-    <a href=index.html#location> Find Locations </a>
+  <div class="burger-button">
+      <span class="burger-top"></span>
+      <span class="burger-middle"></span>
+      <span class="burger-bottom"></span>
   </div>
-</nav>
 
-<section class="grid">
+  <nav class= "burger-menu">
+
+    <!-- this section will only show when menu is clicked - - -  -->
+    <div class="dropdown">
+      <a href=index.html#current> Current Events </a>
+      <a href=index.html#upcoming> Look Out For</a>
+      <a href=index.html#sneak> Sneak Peeks</a>
+      <a href=index.html#review> Upon Reflection </a>
+      <a href=index.html#location> Find Locations </a>
+    </div>
+  </nav>
+
+  
+
+
+  <section class="grid">
   <div class="col-8_sm-12" id= "review1">
     <h1>Review N.0 1</h1>
   </div>
@@ -130,21 +137,24 @@
 
 
 
-<footer class="grid">
-  <div class="col-6_xs-12">
-    <h1 class="left">Stay in the know</h1>
-  </div>
-  <div class="col-6_xs-12 form">
-    <form action="https://formspree.io/youemail@gmail.com" method="POST">
-      <input type="text" name="name" id="name" placeholder="Your Name" />
-      <input type="email" name="_replyto" id="email" placeholder="Your Email" />
-      <textarea name="message" id="message" placeholder="What would you like to see..."></textarea>
-      <input type="submit" value="Submit" class="button" />
-    </form>
-  </div>
-</footer>
+  <footer class="grid">
+    <div class="col-6_xs-12">
+      <h1 class="left">Stay in the know</h1>
+    </div>
+    <div class="col-6_xs-12 form">
+      <form action="https://formspree.io/youemail@gmail.com" method="POST">
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+        <input type="email" name="_replyto" id="email" placeholder="Your Email" />
+        <textarea name="message" id="message" placeholder="What would you like to see..."></textarea>
+        <input type="submit" value="Submit" class="button" />
+      </form>
+    </div>
+  </footer>
 
+  <script src="jquery.js"></script>
+  <script src="main.js"></script>
 
 </body>
 <!-- - - - - - - - -This is where the body ends- - - - - - - - - - - -  - - - --->
+
 </html>

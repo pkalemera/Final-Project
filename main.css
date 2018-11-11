@@ -3,7 +3,6 @@
   - GENERAL HELPER CLASSES
   - UNIVERSAL STYLES
   - HEADER
-  - F
   - MODULAR ELEMENTS
     - Element Name
   - FORM
@@ -18,36 +17,62 @@ Website Colours: List colour hex codes here for reference
 /*- - - - - CSS RESET - - - - - - - - -*/
 
 * {
- box-sizing: border-box;
- border: 1px solid grey;
- padding: 0;
- margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-
-/* ------ UNIVERSAL STYLES - - - - - -*/
-body {
-font-family: "Source Code Pro";
-}
 /* ------ GENERAL HELPER CLASSES - - - - - -*/
 
-.left {text-align: left;}
-.centered {text-align: center;}
+.text-left { text-align: left; }
+.text-centered { text-align: center; }
+.text-justify { text-align: justify; }
 
-.no-padding {padding: 0;}
-.padded-1 {padding: 1%;}
-.padded-3 {padding: 3%}
-.padded-5 {padding: 5%}
-.padded-top-1 {padding-top: 1%;}
+.no-padding { padding: 0; }
+.padded-1 { padding: 1%; }
+.padded-2 { padding: 2%; }
+.padded-3 { padding: 3%; }
+.padded-4 { padding: 4%; }
+.padded-5 { padding: 5%; }
 
-.mob-show {display: none;}
+.padded-top-1 { padding-top: 1%; }
+
+.mob-show { display: none; }
 
 .bg-img {
   background-size: cover;
   background-position: center;
 }
 
+/* ------ UNIVERSAL STYLES - - - - - -*/
+body {
+  text-transform: uppercase; /* @todo */
+  text-align: center; /* @todo */
+  font: 20px "Lato", sans-serif;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
 
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  letter-spacing: 5px;
+}
+
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font: 20px "Lato", sans-serif;
+  color: #bdc3c7;
+  letter-spacing: 3px;
+}
+
+a {
+  color: #ecf0f1;
+  display: block;
+}
 
 header {
   min-height: 60vh;
@@ -55,6 +80,7 @@ header {
   overflow: hidden;
   letter-spacing: 10px;
 }
+
 header video{
   position: absolute;
   top: 50%;
@@ -62,18 +88,282 @@ header video{
   min-width: 100%;
   z-index: -100;
   transform: translate(-50%, -50%);
+  opacity: 0.5;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+.art {
+  font:50px "Lato", sans-serif;
+  color: black;
+  font-weight: 900;
+}
+
+.dots{
+  transform: rotate(90deg);
+  color: white;
+}
+
+.icon {
+  animation: pulse 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
 
 .menu {
   background-color: rgba(200,200,200,0.6);
   position:fixed;
   padding: 1rem 4rem;
-  width: 10rem;
-  top:5rem;
+  width: 2rem;
+  top:0rem;
   right:-2rem;
   transform: rotate(90deg);
+  text-transform: uppercase;
+  text-align: center;
+  font: 20px "Lato", sans-serif;
+  color: #7f8fa6;
+  letter-spacing: 5px;
+}
+
+.col-6 {
+  padding:7%;
+  border: 1px solid black;
+}
+
+.push-right {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: -2rem;
+  padding: 6%;
+  background-color: rgb(200,200,200);
+  /*the example shows two boxes overlapping. margin-left and  */
+  z-index:1;
+}
+
+.push-left {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  margin-left: -2rem;
+  margin-right: 2rem;
+  padding: 12%;
+  background-color: rgb(200,200,200);
+  /*the example shows two boxes overlapping. margin-left and  */
+  z-index:2;
+}
+
+/*
+* navigation + Buger menu
+*/
+
+nav {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font: 20px "Lato", sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+  margin: 1%;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+
+.burger-button.active span{
+  border-color: #383;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(270deg);
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+
+
+/* test */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.parallax {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.parallax .caption {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: grey;
+  font-size: 25px;
   letter-spacing: 10px;
+}
+
+.parallax .caption span {
+  padding: 18px;
+  background-color: rgba(228, 233, 237, 1);
+}
+
+.parallax .caption span.less-height,
+.parallax .caption span.scroll-up,
+.parallax .caption .cool {
+  font-size: 15px;
+  color: #f7f7f7;
+  background-color: transparent;
+  text-transform: uppercase;
+
+}
+
+.parallax .caption span.cool {
+  background-color: #111;
+}
+
+.parallax.first-image {
+  height: 100%;
+  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+}
+
+.parallax.second-image {
+  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  height: 300px;
+}
+
+.parallax.third-image {
+  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  height: 300px;
+}
+
+.parallax.fourth-image {
+  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  height: 100%;
+}
+
+.parallax-demo {
+  color: #777;
+  background-color: rgba(241, 169, 160, 0.2);
+  padding: 100px 100px;
+  text-align: justify;
+}
+
+.quote {
+  padding-bottom: 2rem;
+}
+
+.centered {
+  text-transform: uppercase;
+  text-align: center;
+  font: 20px "Lato", sans-serif;
+  color: #7f8fa6;
+  letter-spacing: 5px;
+}
+
+.second-text {
+  color: #ddd;
+  background-color: rgba(191, 191, 191, 0.6);
+  padding: 20px 80px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.third-text {
+  color: #ddd;
+  background-color: #f1a9a0;
+  padding: 20px 80px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 }
 
 
