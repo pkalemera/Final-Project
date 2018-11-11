@@ -11,9 +11,11 @@ header-banner: true
   </div>
   <div class="col-6_sm-12 push-right">
   </div>
-  <div class="col-6_sm-12">
-    <h3>Sample Title</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="col-6_sm-12 padded-1">
+    <div class="grid-text">
+      <h3 class="text-spacing">Featured in BP Portrait Artist</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
   </div>
 </section>
 
@@ -22,7 +24,7 @@ header-banner: true
   <div class="col-12-middle">
     <h3 class="centered">Look Out For</h3>
   </div>
-  <div class="col-6_sm-12-middle">
+  <div class="col-6_sm-12-middle grid-text">
     <h3>bla bla bla</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
@@ -125,8 +127,12 @@ header-banner: true
 </section>
 
 <!-- This is for the location - - - - - - -->
-<section class="grid" id="location">
-  <div class="col-12">
-    map goes here
+<section id="location">
+
+  <button id="map-popup-button">Open popup</button>
+
+  <div id="map-popup">
+    <div style="position:relative;height:0;padding-bottom:56.25%;min-height:449px;box-sizing:border-box;"><iframe src="https://embed.alpacamaps.com/journey/bfa4d254-e15c-11e8-9d43-024bc0398b11/default" width="800" height="450" frameborder="0" style="border:1px #d5d5d5 solid;position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
   </div>
+
 </section>

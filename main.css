@@ -75,7 +75,7 @@ a {
 }
 
 header {
-  min-height: 60vh;
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
   letter-spacing: 10px;
@@ -95,9 +95,10 @@ header video{
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 
 .art {
-  font:50px "Lato", sans-serif;
-  color: black;
+  font: 80px "Lato", sans-serif;
   font-weight: 900;
+  color: #191919;
+  opacity: 0.7;
 }
 
 .dots{
@@ -148,6 +149,9 @@ header video{
   background-color: rgb(200,200,200);
   /*the example shows two boxes overlapping. margin-left and  */
   z-index:1;
+  background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .push-left {
@@ -345,9 +349,10 @@ body {
 .centered {
   text-transform: uppercase;
   text-align: center;
-  font: 20px "Lato", sans-serif;
+  font: 30px "Lato", sans-serif;
   color: #7f8fa6;
   letter-spacing: 5px;
+  padding: 4%;
 }
 
 .second-text {
@@ -365,6 +370,9 @@ body {
   font-size: 1.5rem;
   letter-spacing: 3px;
 }
+
+section:focus {
+  outline: none;
 
 
   /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).

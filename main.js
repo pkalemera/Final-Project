@@ -39,6 +39,9 @@ $(document).ready(function() {
       }
     }); // end smooth scroll
 
+// end DOCUMENT READY
+});
+
 //start of burger menu
 
 $( document ).ready(function() {
@@ -54,6 +57,3 @@ $( document ).ready(function() {
 });
 
 //end of burger menu
-
-// end custom jquery
-});
