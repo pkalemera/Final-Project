@@ -74,6 +74,7 @@ Website Colours: List colour hex codes here for reference
   display:block;
 }
 
+
 /* ------ UNIVERSAL STYLES - - - - - -*/
 body {
   text-transform: uppercase;
@@ -508,6 +509,8 @@ padding: 6%;
 .upon-text {
   color: #d3b9aa;
 }
+
+
 #map-popup-button {
   background-color: grey;
   padding: 1%;
