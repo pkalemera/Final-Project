@@ -56,9 +56,10 @@ body {
 h3 {
   text-transform: uppercase;
   text-align: center;
-  font: 20px "Lato", sans-serif;
+  font: 30px "Lato", sans-serif;
   color: #111;
   letter-spacing: 5px;
+  font-weight: bold;
 }
 
 h4 {
@@ -91,6 +92,11 @@ header video{
   opacity: 0.5;
 }
 
+footer {
+  padding:8%;
+  background-color: #f8f4f3;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -99,11 +105,7 @@ header video{
   font-weight: 900;
   color: #191919;
   opacity: 0.7;
-}
-
-.dots{
-  transform: rotate(90deg);
-  color: white;
+  padding: 3%;
 }
 
 .icon {
@@ -141,49 +143,47 @@ header video{
 }
 
 .push-right {
-  margin-top: -1rem;
-  margin-bottom: 2rem;
   margin-left: 4rem;
   margin-right: -4rem;
-  padding: 1o%;
-  background-color: rgb(200,200,200);
-  /*the example shows two boxes overlapping. margin-left and  */
-  z-index:-4;
-  background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.push-left {
+  margin-left: -4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.current-image {
+    background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: -4rem;
+  }
+
+.upcoming-image {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP-Dr-RHok_2YT7m8F4VY8ppHr_zRucvO8ViMHnZBLyQm58NQ7Nw);
   background-position: center;
   background-size: cover;
+  margin-left: -4rem;
+  margin-right: 4rem;
+  z-index: -1;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
-.grid-text {
 
+.art-space .grid-text {
   background-color: #f8f4f3;
   opacity: 0.7;
   margin-right: 20px;
   font-size: 17px;
   border: 1px black;
   padding: 12%;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  margin-left: -4rem;
-  margin-right: 4rem;
-
-}
-
-.push-left {
-  margin-top: 2rem;
-  margin-bottom: -2rem;
-  margin-left: -2rem;
-  padding: 20%;
-  /*the example shows two boxes overlapping. margin-left and  */
-  z-index:2;
-  background-image: url(http://2.bp.blogspot.com/-RX-oAnX7zGw/USeGQJA0rTI/AAAAAAAACNY/RIG0JsbiJqk/s1600/Sepia+Study+sm.jpg);
-  opacity: 0.5;
-  margin-right: 20px;
-  font-size: 17px;
-  border: 1px black;
-  min-height: 60vh;
-  background-position: center;
-  background-size: cover;
-
 }
 
 /*
@@ -337,23 +337,23 @@ body {
 }
 
 .parallax.first-image {
-  height: 100%;
+  min-height: 70%;
   background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
 }
 
 .parallax.second-image {
   background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
-  height: 300px;
+  min-height: 70%;
 }
 
 .parallax.third-image {
   background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
-  height: 300px;
+  min-height: 70%;
 }
 
 .parallax.fourth-image {
   background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
-  height: 100%;
+  min-height: 70%;
 }
 
 .parallax-demo {
@@ -385,15 +385,43 @@ body {
 }
 
 .third-text {
-  color: #ddd;
-  background-color: #f1a9a0;
-  padding: 20px 80px;
+  color: 	#f1f1f1;
+  background-color: #ccc8c5;
+  padding: 15% 10%;
   font-size: 1.5rem;
   letter-spacing: 3px;
 }
 
+.map {
+overflow: hidden;
+padding-left: 30px;
+padding-right: 30px;
+}
+#map-popup {
+  display: none;
+}
+
 section:focus {
   outline: none;
+
+}
+
+/* everything inside this media query, only applies on mobile */
+
+@media(max-width:767px) {
+  #art-space div {
+    margin:0 auto;
+  }
+
+  .bg-image {
+    padding-bottom: 60%;
+  }
+  .parallax.first-image {
+  min-height:50%;
+  }
+
+} /* end media query*/
+
 
 
   /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).

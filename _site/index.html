@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900">
 
+<!-- Animate.css for text animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
   <!-- This is the spot where we our own stylesheets -->
   <link rel="stylesheet" href="/main.css" type="text/css" />
 
@@ -19,7 +22,7 @@
 </head>
 
 <!-- - - - - - - This is where the main body begins- - - - - - - - - -->
-<body>
+<body id="art-space" class="art-space">
 
   <div class="burger-button">
       <span class="burger-top"></span>
@@ -61,9 +64,9 @@
   <div class="col-12">
     <h3 class="centered open-header">Current Events</h3>
   </div>
-  <div class="col-6_sm-12 push-right">
+  <div class="col-6_sm-12 current-image animated fadeInLeft">
   </div>
-  <div class="col-6_sm-12 padded-1">
+  <div class="col-6_sm-12 push-left padded-1 animated fadeInRight">
     <div class="grid-text">
       <h3 class="text-spacing">Featured in BP Portrait Artist</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -73,16 +76,22 @@
 
 <!-- - - - - - - - - - Section for Coming soon- - - - - - - - - - - - - -->
 <section class="grid" id="upcoming">
-  <div class="col-12-middle">
-    <h3 class="centered">Look Out For</h3>
+  <div class="col-12">
+    <h3 class="centered open-header">Look Out For</h3>
   </div>
-  <div class="col-6_sm-12-middle grid-text">
-    <h3>bla bla bla</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <div class="col-6_sm-12 push-right padded-1 animated fadeInLeft">
+    <div class="grid-text">
+      <h3 class="text-spacing">Featured in BP Portrait Artist</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
   </div>
-  <div class="col-6_sm-12-middle push-left">
+
+  <div class="col-6_sm-12 upcoming-image animated fadeInRight">
   </div>
+
 </section>
+
 
 <!-- Find out more- - - - - - - - - -  - - - - - -  -->
 <section class="parallax first-image">
@@ -179,12 +188,12 @@
 </section>
 
 <!-- This is for the location - - - - - - -->
-<section id="location">
+<section id="location" class="map">
 
-  <button id="map-popup-button">Open popup</button>
+  <button id="map-popup-button">View Map</button>
 
   <div id="map-popup">
-    <div style="position:relative;height:0;padding-bottom:56.25%;min-height:449px;box-sizing:border-box;"><iframe src="https://embed.alpacamaps.com/journey/bfa4d254-e15c-11e8-9d43-024bc0398b11/default" width="800" height="450" frameborder="0" style="border:1px #d5d5d5 solid;position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161635.3525656511!2d-0.244083040801243!3d51.528537223959894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sid!4v1541988075180" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
 </section>

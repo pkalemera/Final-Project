@@ -54,6 +54,10 @@ $( document ).ready(function() {
     $(".burger-button").toggleClass("active");
     $(".burger-menu").slideToggle();
   });
+  $("#map-popup-button").click(function(){
+    $("#map-popup").slideToggle();
+});
+
 });
 
 //end of burger menu
