@@ -115,7 +115,8 @@ header video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   z-index: -100;
   transform: translate(-50%, -50%);
   opacity: 0.5;
@@ -200,6 +201,7 @@ footer p {
   margin-bottom: 2rem;
   margin-left: 4rem;
   margin-right: -4rem;
+  min-height: 60vh;
 }
 
 .upcoming-image {
@@ -212,6 +214,7 @@ footer p {
   margin-top: -1rem;
   margin-bottom: 2rem;
   opacity: 0.5;
+  min-height: 60vh;
 }
 
 .art-space .grid-text {
@@ -310,7 +313,7 @@ nav {
   z-index: 99999999;
 }
 
-.burger-menu a {
+ .burger-menu a {
   text-decoration: none;
   padding: 15px 11px;
   font-size: 40px;
@@ -321,10 +324,6 @@ nav {
   padding: 5px 15px;
   text-align: center;
   white-space: nowrap;
-}
-
-a:hover {
-    color: hotpink;
 }
 
 .burger-menu li {
