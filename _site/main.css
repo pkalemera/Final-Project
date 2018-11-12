@@ -70,6 +70,10 @@ Website Colours: List colour hex codes here for reference
   background-position: center;
 }
 
+.block {
+  display:block;
+}
+
 /* ------ UNIVERSAL STYLES - - - - - -*/
 body {
   text-transform: uppercase;
@@ -206,6 +210,45 @@ footer p {
 
 .upcoming-image {
   background-image: url(https://d32dm0rphc51dk.cloudfront.net/cmLoio7YJ5i8CPgjD1wZuw/large.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: -4rem;
+  margin-right: 4rem;
+  z-index: -1;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  min-height: 60vh;
+}
+
+.upcoming-image1 {
+  background-image: url(https://d32dm0rphc51dk.cloudfront.net/q5rQ6zR8v-pOz4G4JXzfTw/large.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: -4rem;
+  margin-right: 4rem;
+  z-index: -1;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  min-height: 60vh;
+}
+
+.upcoming-image2 {
+  background-image: url(https://d32dm0rphc51dk.cloudfront.net/f_Os_dxuIR7-y7S1GVb95Q/large.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: -4rem;
+  margin-right: 4rem;
+  z-index: -1;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  min-height: 60vh;
+}
+
+.upcoming-image3 {
+  background-image: url(https://d32dm0rphc51dk.cloudfront.net/EYExBStrUqaD6Aanw7pY9g/larger.jpg);
   background-position: center;
   background-size: cover;
   margin-left: -4rem;
@@ -513,6 +556,17 @@ padding: 6%;
 .overlay:hover {
   opacity:0.8;
   transition: all 0.5s;
+}
+
+.back-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+}
+
+.back-button a {
+  color: black;
 }
 
 /* - - - - - - - - - map section- - - - - - - - - -  */
