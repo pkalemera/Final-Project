@@ -10,8 +10,7 @@ $(document).ready(function() {
     .click(function(event) {
       // On-page links
       if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-        &&
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
         location.hostname == this.hostname
       ) {
         // Figure out element to scroll to
@@ -31,7 +30,7 @@ $(document).ready(function() {
             if ($target.is(":focus")) { // Checking if the target was focused
               return false;
             } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
               $target.focus(); // Set focus again
             };
           });
@@ -39,25 +38,26 @@ $(document).ready(function() {
       }
     }); // end smooth scroll
 
-// end DOCUMENT READY
-});
+  // end DOCUMENT READY
 
-//start of burger menu
 
-$( document ).ready(function() {
-   $(".burger-button").click(function(){
-     $(".burger-button").toggleClass("active");
-     $(".burger-menu").slideToggle();
-   });
+  //start of burger menu
 
-  $(".burger-menu").click(function(){
+
+  $(".burger-button").click(function() {
     $(".burger-button").toggleClass("active");
     $(".burger-menu").slideToggle();
   });
-  $("#map-popup-button").click(function(){
-    $("#map-popup").slideToggle();
-});
 
+  $(".burger-menu").click(function() {
+    $(".burger-button").toggleClass("active");
+    $(".burger-menu").slideToggle();
+  });
+  $("#map-popup-button").click(function() {
+    $("#map-popup").slideToggle();
+  });
+  // this is what we need for wow.js
+  new WOW().init();
 
 });
 
