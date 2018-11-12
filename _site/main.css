@@ -123,7 +123,7 @@ header video {
 }
 
 footer {
-  padding: 8%;
+  padding: 4%;
   background-color: #f8f4f3;
 }
 footer p {
@@ -327,12 +327,10 @@ nav {
 }
 
 .burger-menu li {
-  list-style: none
+  list-style: none;
 }
 
-/* test */
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -475,20 +473,17 @@ body {
 }
 
 .samp-img1 {
-background-image: url("https://frieze.com/sites/default/files/landleebul.jpg");
+  background-image: url("https://frieze.com/sites/default/files/landleebul.jpg");
 }
 .samp-img2 {
-background-image: url("https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FqXCvW0QDbBMuuL2B9ZTQvQ%252F4S9A3707.jpg&width=1200&quality=80");
-
+  background-image: url("https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FqXCvW0QDbBMuuL2B9ZTQvQ%252F4S9A3707.jpg&width=1200&quality=80");
 }
 .samp-img3 {
-background-image: url("https://img.theculturetrip.com/768x//wp-content/uploads/2018/10/stevenson-social-work-frieze-london-2018.jpg");
-
+  background-image:   url("https://img.theculturetrip.com/768x//wp-content/uploads/2018/10/stevenson-social-work-frieze-london-2018.jpg");
 }
 
 .samp-img4 {
-background-image: url("http://webelieveinbeauty.com/wp-content/uploads/2015/10/Tanya_Bonakdar.jpg");
-
+  background-image: url("http://webelieveinbeauty.com/wp-content/uploads/2015/10/Tanya_Bonakdar.jpg");
 }
 
 .overlay {
@@ -505,8 +500,6 @@ background-image: url("http://webelieveinbeauty.com/wp-content/uploads/2015/10/T
   opacity:0.8;
   transition: all 0.5s;
 }
-}
-
 
 /* - - - - - - - - - map section- - - - - - - - - -  */
 .map {
@@ -647,8 +640,7 @@ input, textarea {
 
 @media(max-width:768px) {
   #art-space div {
-  margin: 0 auto;
-
+    margin: 0 auto;
   }
 
   .bg-image {
