@@ -13,9 +13,7 @@ Website Fonts: List fonts here for reference
 Website Colours: List colour hex codes here for reference
 ----------------------------
 */
-
 /*- - - - - CSS RESET - - - - - - - - -*/
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,21 +21,49 @@ Website Colours: List colour hex codes here for reference
 }
 
 /* ------ GENERAL HELPER CLASSES - - - - - -*/
+.text-left {
+  text-align: left;
+}
 
-.text-left { text-align: left; }
-.text-centered { text-align: center; }
-.text-justify { text-align: justify; }
+.text-centered {
+  text-align: center;
+}
 
-.no-padding { padding: 0; }
-.padded-1 { padding: 1%; }
-.padded-2 { padding: 2%; }
-.padded-3 { padding: 3%; }
-.padded-4 { padding: 4%; }
-.padded-5 { padding: 5%; }
+.text-justify {
+  text-align: justify;
+}
 
-.padded-top-1 { padding-top: 1%; }
+.no-padding {
+  padding: 0;
+}
 
-.mob-show { display: none; }
+.padded-1 {
+  padding: 1%;
+}
+
+.padded-2 {
+  padding: 2%;
+}
+
+.padded-3 {
+  padding: 3%;
+}
+
+.padded-4 {
+  padding: 4%;
+}
+
+.padded-5 {
+  padding: 5%;
+}
+
+.padded-top-1 {
+  padding-top: 1%;
+}
+
+.mob-show {
+  display: none;
+}
 
 .bg-img {
   background-size: cover;
@@ -46,8 +72,10 @@ Website Colours: List colour hex codes here for reference
 
 /* ------ UNIVERSAL STYLES - - - - - -*/
 body {
-  text-transform: uppercase; /* @todo */
-  text-align: center; /* @todo */
+  text-transform: uppercase;
+  /* @todo */
+  text-align: center;
+  /* @todo */
   font: 20px "Lato", sans-serif;
   letter-spacing: 5px;
   font-weight: lighter;
@@ -82,10 +110,10 @@ header {
   letter-spacing: 10px;
 }
 
-header video{
+header video {
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   min-width: 100%;
   z-index: -100;
   transform: translate(-50%, -50%);
@@ -93,13 +121,12 @@ header video{
 }
 
 footer {
-  padding:8%;
+  padding: 8%;
   background-color: #f8f4f3;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - */
-
 .art {
   font: 80px "Lato", sans-serif;
   font-weight: 900;
@@ -117,18 +144,19 @@ footer {
   0% {
     color: black;
   }
+
   100% {
     color: white;
   }
 }
 
 .menu {
-  background-color: rgba(200,200,200,0.6);
-  position:fixed;
+  background-color: rgba(200, 200, 200, 0.6);
+  position: fixed;
   padding: 1rem 4rem;
   width: 2rem;
-  top:0rem;
-  right:-2rem;
+  top: 0rem;
+  right: -2rem;
   transform: rotate(90deg);
   text-transform: uppercase;
   text-align: center;
@@ -138,7 +166,7 @@ footer {
 }
 
 .col-6 {
-  padding:7%;
+  padding: 7%;
   border: 1px solid black;
 }
 
@@ -157,14 +185,14 @@ footer {
 }
 
 .current-image {
-    background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
-    background-position: center;
-    background-size: cover;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-    margin-left: 4rem;
-    margin-right: -4rem;
-  }
+  background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: -4rem;
+}
 
 .upcoming-image {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP-Dr-RHok_2YT7m8F4VY8ppHr_zRucvO8ViMHnZBLyQm58NQ7Nw);
@@ -175,6 +203,7 @@ footer {
   z-index: -1;
   margin-top: -1rem;
   margin-bottom: 2rem;
+  opacity: 0.5;
 }
 
 .art-space .grid-text {
@@ -189,7 +218,6 @@ footer {
 /*
 * navigation + Buger menu
 */
-
 nav {
   text-decoration: none;
   padding: 15px 11px;
@@ -197,17 +225,17 @@ nav {
   font-weight: 300;
   color: #C3BFBC;
   font: 20px "Lato", sans-serif;
-  display:block;
-  padding:5px 15px;
-  text-align:center;
-  white-space:nowrap;
+  display: block;
+  padding: 5px 15px;
+  text-align: center;
+  white-space: nowrap;
   margin: 1%;
   letter-spacing: 3px;
   font-weight: lighter;
 }
 
 .burger-button {
-  position:fixed;
+  position: fixed;
   top: 2vh;
   right: 2vh;
   z-index: 9999999999;
@@ -215,7 +243,7 @@ nav {
 }
 
 /*this is where you can chand the color of the buttons*/
-.burger-button span{
+.burger-button span {
   width: 25px;
   border: 2px solid black;
   background-color: black;
@@ -224,54 +252,54 @@ nav {
   transition: 2s;
 }
 
-.burger-button.active span{
+.burger-button.active span {
   border-color: #d3b9aa;
-  background-color:#d3b9aa;
+  background-color: #d3b9aa;
 }
 
-.burger-top, .burger-bottom{
+.burger-top, .burger-bottom {
   position: absolute;
 }
 
-.burger-top{
+.burger-top {
   top: 02px;
 }
 
-.burger-bottom{
+.burger-bottom {
   bottom: 02px;
 }
 
 /* make sure this has the same top as the burger button has padding*/
-.burger-button.active .burger-top{
+.burger-button.active .burger-top {
   position: absolute;
   top: 8px;
   transform: rotateZ(45deg);
 }
 
-.burger-button.active .burger-middle{
+.burger-button.active .burger-middle {
   transform: rotateZ(270deg);
-  border-color: rgba(0,0,0,0);
-  background-color:rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* make sure this has the same bottom as the burger button has padding*/
-.burger-button.active .burger-bottom{
+.burger-button.active .burger-bottom {
   position: absolute;
   bottom: 8px;
   transform: rotateZ(-45deg);
 }
 
 .burger-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    background-color: #f9f9f9;
-    padding:5px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-    z-index: 99999999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f9f9f9;
+  padding: 5px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  z-index: 99999999;
 }
 
 .burger-menu a {
@@ -281,17 +309,17 @@ nav {
   font-weight: 300;
   color: #C3BFBC;
   font-family: 'Alegreya Sans SC', sans-serif;
-  display:block;
-  padding:5px 15px;
-  text-align:center;
-  white-space:nowrap;
+  display: block;
+  padding: 5px 15px;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.burger-menu li{list-style:none}
-
+.burger-menu li {
+  list-style: none
+}
 
 /* test */
-
 html,
 body {
   height: 100%;
@@ -329,7 +357,6 @@ body {
   color: #f7f7f7;
   background-color: transparent;
   text-transform: uppercase;
-
 }
 
 .parallax .caption span.cool {
@@ -371,7 +398,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   font: 30px "Lato", sans-serif;
-  color: #7f8fa6;
   letter-spacing: 5px;
   padding: 4%;
 }
@@ -385,46 +411,231 @@ body {
 }
 
 .third-text {
-  color: 	#f1f1f1;
+  color: #f1f1f1;
   background-color: #ccc8c5;
   padding: 15% 10%;
   font-size: 1.5rem;
   letter-spacing: 3px;
 }
-
-.map {
-overflow: hidden;
-padding-left: 30px;
-padding-right: 30px;
+.border-white {
+  background-color: white;
+  padding: 2%;
 }
+.current  {
+  color: #231f20;
+  background-color:#d9d1cf;
+  font-weight: bold;
+
+}
+.look {
+  color: #d9d1cf;
+  background-color:#231f20;
+}
+
+/* - - - - - - - - -sample section - - - - - - - - - -*/
+.sample1 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.relative {
+  position: relative;
+}
+
+.samp-img1 {
+background-image: url("https://frieze.com/sites/default/files/landleebul.jpg");
+}
+.samp-img2 {
+background-image: url("https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FqXCvW0QDbBMuuL2B9ZTQvQ%252F4S9A3707.jpg&width=1200&quality=80");
+
+}
+.samp-img3 {
+background-image: url("https://img.theculturetrip.com/768x//wp-content/uploads/2018/10/stevenson-social-work-frieze-london-2018.jpg");
+
+}
+
+.samp-img4 {
+background-image: url("http://webelieveinbeauty.com/wp-content/uploads/2015/10/Tanya_Bonakdar.jpg");
+
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20%;
+  text-align: center;
+  opacity: 0;
+  background-color: #f1f1f1;
+}
+
+.overlay:hover {
+  opacity:0.8;
+  transition: all 0.5s;
+}
+}
+
+
+/* - - - - - - - - - map section- - - - - - - - - -  */
+.map {
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 #map-popup {
   display: none;
 }
 
 section:focus {
   outline: none;
-
 }
 
-/* everything inside this media query, only applies on mobile */
+/* form styling */
+/* Style inputs */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+.button {
+  color: white;
+  padding: 2%;
+  background-color: rgba(245, 171, 53, 1);
+  border-radius: 5px;
+}
+
+input, textarea {
+  border-radius: 5px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Add a background color to the submit button on mouse-over */
+/* everything inside this media query, only applies on mobile */
 @media(max-width:767px) {
   #art-space div {
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .bg-image {
     padding-bottom: 60%;
   }
+
   .parallax.first-image {
-  min-height:50%;
+    min-height: 50%;
   }
 
-} /* end media query*/
+  .rev-quo {
+    padding: 3%;
+    margin: 3%;
+    padding-right: 2rem;
+  }
+}
 
-
-
-  /* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).
+/* end media query*/
+/* position is usually set to static which means that is moves as the page is moving, but fixed means that is reamins in the specified positon, in this case (top).
   .sec-main {
   position: relative;
   height: 560px;

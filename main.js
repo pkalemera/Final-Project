@@ -58,6 +58,7 @@ $( document ).ready(function() {
     $("#map-popup").slideToggle();
 });
 
+
 });
 
 //end of burger menu

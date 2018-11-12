@@ -2,22 +2,21 @@
 layout: default
 ---
 
-<section class="grid review-page">
+<section class="grid review-page animated fadeInDown">
   <div class="col-8_sm-12" id= "review1">
-    <h1>Review N.{{page.review-number}}</h1>
+    <h1>Review Nº{{page.review-number}}</h1>
   </div>
   <div class="col-4_sm-12"> <!-- empty div --> </div>
 
   <div class="col-6_sm_12"> <!-- empty div --> </div>
 
-  <div class="col-6_sm_12">
+  <div class="col-6_sm_12 rev-quo">
     <h4>“{{page.quote}}”
       <span>-{{page.quote-author}}</span>
     </h4>
   </div>
-  hello
 
-  <div class="col-8_sm-12">
+  <div class="col-8_sm-12 animated fadeInLeft">
     <img src="{{page.featured_image}}">
   </div>
   <div class="col-4_sm-12"><!-- empty div --> </div>
@@ -28,7 +27,7 @@ layout: default
   <div class="col-5_sm-12">
 
   </div>
-  <div class="col-7_sm-12">
+  <div class="col-7_sm-12animated fadeInRight">
     {{content}}
   </div>
 </section>

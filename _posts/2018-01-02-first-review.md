@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My first review
-review-number: 2
+review-number: 1
 quote: You don't know what you don't know
 quote-author: Tina
 featured_image: https://www.creativeboom.com/uploads/articles/96/965834ede6fe402c46d2200573851a1dc5b9bb34_630.jpg
