@@ -194,7 +194,7 @@ footer p {
 }
 
 .current-image {
-  background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
+  background-image: url(http://theinspirationgrid.com/app/uploads/2013/09/alan-coulson-paintings-10.jpg);
   background-position: center;
   background-size: cover;
   margin-top: -1rem;
@@ -205,7 +205,7 @@ footer p {
 }
 
 .upcoming-image {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP-Dr-RHok_2YT7m8F4VY8ppHr_zRucvO8ViMHnZBLyQm58NQ7Nw);
+  background-image: url(https://d32dm0rphc51dk.cloudfront.net/cmLoio7YJ5i8CPgjD1wZuw/large.jpg);
   background-position: center;
   background-size: cover;
   margin-left: -4rem;
@@ -355,8 +355,12 @@ html, body {
 }
 
 .parallax .caption span {
-  padding: 18px;
   background-color: rgba(228, 233, 237, 1);
+  padding: 1%;
+}
+
+.creativity {
+  color: #505050;
 }
 
 .parallax .caption span.less-height,
@@ -367,6 +371,9 @@ html, body {
   background-color: transparent;
   text-transform: uppercase;
 }
+.stay {
+padding: 6%;
+}
 
 .parallax .caption span.cool {
   background-color: #111;
@@ -374,21 +381,21 @@ html, body {
 
 .parallax.first-image {
   min-height: 70%;
-  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  background-image: url("https://cdn.shopify.com/s/files/1/2355/7357/products/Modern-Black-and-White-Fluid-Wall-Art-Painting-Poster-Print-1.jpg?v=1530603420");
 }
 
 .parallax.second-image {
-  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  background-image: url("https://i.pinimg.com/originals/30/e2/1f/30e21f362fd3c953f0afaef4e5cb3fe5.jpg");
   min-height: 70%;
 }
 
 .parallax.third-image {
-  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  background-image: url("https://i.pinimg.com/750x/a8/95/5f/a8955f0d8984b108a506b62521caa7ac.jpg");
   min-height: 70%;
 }
 
 .parallax.fourth-image {
-  background-image: url("https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw726781cf/images/large/104019_1.jpg?sw=290&sh=290&sm=fit");
+  background-image: url("https://cdn.shopify.com/s/files/1/2355/7357/products/Modern-Black-and-White-Fluid-Wall-Art-Painting-Poster-Print-1.jpg?v=1530603420");
   min-height: 70%;
 }
 
@@ -456,6 +463,13 @@ html, body {
 }
 
 .upon-text {
+  color: #d3b9aa;
+}
+#map-popup-button {
+  background-color: grey;
+  padding: 1%;
+  font-size: 15px;
+  font-family: 'Alegreya Sans SC', sans-serif;
   color: #d3b9aa;
 }
 
