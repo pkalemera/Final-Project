@@ -143,26 +143,47 @@ header video{
 .push-right {
   margin-top: -1rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: -2rem;
-  padding: 6%;
+  margin-left: 4rem;
+  margin-right: -4rem;
+  padding: 1o%;
   background-color: rgb(200,200,200);
   /*the example shows two boxes overlapping. margin-left and  */
-  z-index:1;
+  z-index:-4;
   background-image: url(https://assets.saatchiart.com/saatchi/847447/art/4128859/3198711-EBEOYAGB-6.jpg);
   background-position: center;
   background-size: cover;
+}
+.grid-text {
+
+  background-color: #f8f4f3;
+  opacity: 0.7;
+  margin-right: 20px;
+  font-size: 17px;
+  border: 1px black;
+  padding: 12%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: -4rem;
+  margin-right: 4rem;
+
 }
 
 .push-left {
   margin-top: 2rem;
   margin-bottom: -2rem;
   margin-left: -2rem;
-  margin-right: 2rem;
-  padding: 12%;
-  background-color: rgb(200,200,200);
+  padding: 20%;
   /*the example shows two boxes overlapping. margin-left and  */
   z-index:2;
+  background-image: url(http://2.bp.blogspot.com/-RX-oAnX7zGw/USeGQJA0rTI/AAAAAAAACNY/RIG0JsbiJqk/s1600/Sepia+Study+sm.jpg);
+  opacity: 0.5;
+  margin-right: 20px;
+  font-size: 17px;
+  border: 1px black;
+  min-height: 60vh;
+  background-position: center;
+  background-size: cover;
+
 }
 
 /*
@@ -204,8 +225,8 @@ nav {
 }
 
 .burger-button.active span{
-  border-color: #383;
-  background-color:#383;
+  border-color: #d3b9aa;
+  background-color:#d3b9aa;
 }
 
 .burger-top, .burger-bottom{
