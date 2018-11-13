@@ -72,6 +72,7 @@ Website Colours: List colour hex codes here for reference
 
 .block {
   display:block;
+  color: darkgrey;
 }
 
 
@@ -542,17 +543,17 @@ padding: 6%;
 }
 
 .samp-img1 {
-  background-image: url("https://frieze.com/sites/default/files/landleebul.jpg");
+  background-image: url("https://66.media.tumblr.com/b363bd8357833cd90ff5bdbe99f615d0/tumblr_nka6hghM591rqfgf7o1_400.jpg");
 }
 .samp-img2 {
-  background-image: url("https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FqXCvW0QDbBMuuL2B9ZTQvQ%252F4S9A3707.jpg&width=1200&quality=80");
+  background-image: url("http://miportafolio.eu/wp-content/uploads/2017/04/arnau4_50x50cm-460x295.jpg");
 }
 .samp-img3 {
-  background-image:   url("https://img.theculturetrip.com/768x//wp-content/uploads/2018/10/stevenson-social-work-frieze-london-2018.jpg");
+  background-image:   url("https://i.pinimg.com/236x/aa/6c/94/aa6c94395128b8feb425f1f6c64a3735--cesar-biojo-cant-sleep.jpg");
 }
 
 .samp-img4 {
-  background-image: url("http://webelieveinbeauty.com/wp-content/uploads/2015/10/Tanya_Bonakdar.jpg");
+  background-image: url("http://lh5.ggpht.com/-3ccQOVtVJPU/Uxz1guymn7I/AAAAAAAAXP4/gnCkytU9K2o/cesar%252520biojo%2525207%25255B4%25255D.jpg?imgmax=800");
 }
 
 .overlay {
