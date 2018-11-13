@@ -116,6 +116,15 @@ header {
   letter-spacing: 10px;
 }
 
+.other {
+  background-color:	#ccc8c5;
+
+}
+
+.find {
+  background-color: #d3b9aa !important;
+}
+
 header video {
   position: absolute;
   top: 50%;
@@ -399,7 +408,7 @@ html, body {
 }
 
 .parallax .caption span {
-  background-color: rgba(228, 233, 237, 1);
+  background-color: #fdf0f2;
   padding: 1%;
 }
 
